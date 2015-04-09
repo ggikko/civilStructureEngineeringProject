@@ -11,6 +11,8 @@ public class Client extends ValuesBean {
 	private double x;
 	private double moment;
 	private double momentPosition;
+	private double elasticity;
+	private double inertia;
 
 	public void setting() {
 		this.length = getL();
@@ -22,12 +24,14 @@ public class Client extends ValuesBean {
 		this.qxx2 = getQx2();
 		this.moment = getM();
 		this.momentPosition = getMx();
+		this.elasticity = getElasticity();
+		this.inertia = getInertia();
 	}
 
 	public void singleLoadSolve() {
 		SingleLoadCalculator singleLoadCalculator = SingleLoadCalculator
 				.getSingleLoadCalculator();
-		singleLoadCalculator.singleLoadsolve(length, load, loadPosition, x);
+		singleLoadCalculator.singleLoadsolve(length, load, loadPosition, x, elasticity, inertia);
 	}
 
 	public void distributedLoadSolve() {

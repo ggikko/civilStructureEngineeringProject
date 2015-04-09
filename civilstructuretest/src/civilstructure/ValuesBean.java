@@ -6,6 +6,8 @@ public class ValuesBean {
 	private double x;
 	private double sfdy;
 	private double bmdy;
+	private double elasticity;
+	private double inertia;
 
 	// common length
 	private double l;
@@ -55,6 +57,18 @@ public class ValuesBean {
 	}
 	public void setL(double l) {
 		this.l = l;
+	}
+	public double getElasticity() {
+		return elasticity;
+	}
+	public void setElasticity(double elasticity) {
+		this.elasticity = elasticity;
+	}
+	public double getInertia() {
+		return inertia;
+	}
+	public void setInertia(double inertia) {
+		this.inertia = inertia;
 	}
 	public double getP() {
 		return p;

@@ -38,7 +38,7 @@ public class Client extends ValuesBean {
 		DistributedLoadCalculator distributedLoadCalculator = DistributedLoadCalculator
 				.getDistributedLoadCalculator();
 		distributedLoadCalculator.distributedLoadSolve(length, qq, qxx1, qxx2,
-				x);
+				x, elasticity, inertia);
 	}
 
 	public void momentSolve() {

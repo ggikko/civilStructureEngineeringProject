@@ -17,10 +17,10 @@ public class View {
 		
 		client.setQ(10);
 		client.setQx1(3);
-		client.setQx2(5);
+		client.setQx2(4);
 		
 		client.setM(10);
-		client.setMx(5);
+		client.setMx(6);
 		
 		client.setX(3);  // x Value
 		
@@ -31,12 +31,16 @@ public class View {
 		client.setting();
 		//client2.setting();
 		
-		client.singleLoadSolve();
+	//	client.singleLoadSolve();
+	//	client.momentSolve();
+		client.distributedLoadSolve();
 	//	client2.singleLoadSolve();
 		
 		
 	//	client.distributedLoadSolve();
 //		client.momentSolve();
+		
+		
 		
 		
 	}

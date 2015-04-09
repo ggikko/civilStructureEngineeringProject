@@ -44,6 +44,6 @@ public class Client extends ValuesBean {
 	public void momentSolve() {
 		MomentCalculator momentCalculator = MomentCalculator
 				.getMomentCalculator();
-		momentCalculator.momentSolve(length, moment, momentPosition, x);
+		momentCalculator.momentSolve(length, moment, momentPosition, x, elasticity, inertia);
 	}
 }

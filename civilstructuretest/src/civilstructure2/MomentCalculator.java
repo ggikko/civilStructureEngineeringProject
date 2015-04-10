@@ -13,8 +13,8 @@ public class MomentCalculator {
 	public void printer() {
 		System.out.println(mv);
 		System.out.println(mm);
-		System.out.println(mdf);
-		System.out.println(mvv);
+		System.out.println(mdf*-1000000000);
+		System.out.println(mvv*1000000);
 	}
 
 	// singleton

@@ -13,8 +13,8 @@ public class SingleLoadCalculator {
 	public void printer() {
 		System.out.println(pv);
 		System.out.println(pm);
-		System.err.println(pdf);
-		System.out.println(pvv);
+		System.err.println(pdf*-1000000000);
+		System.out.println(pvv*1000000);
 	}
 
 	// singleton

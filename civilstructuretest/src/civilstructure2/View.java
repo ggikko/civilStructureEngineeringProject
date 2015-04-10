@@ -22,7 +22,7 @@ public class View {
 		client.setM(10);
 		client.setMx(6);
 
-		client.setX(4); // x Value
+		client.setX(3.2); // x Value
 
 		client.setElasticity(200);
 		client.setInertia(20 * 20 * 20 * 20 / 12);
@@ -30,9 +30,9 @@ public class View {
 		client.setting();
 		// client2.setting();
 
-		// client.singleLoadSolve();
+		//client.singleLoadSolve();
 		// client.momentSolve();
-		// client.distributedLoadSolve();
+		 client.distributedLoadSolve();
 		// client2.singleLoadSolve();
 
 		// client.distributedLoadSolve();

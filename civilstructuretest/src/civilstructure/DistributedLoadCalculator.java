@@ -7,10 +7,8 @@ public class DistributedLoadCalculator {
 	private double qm;
 	private double qdf1;
 	private double qdf2;
-	private double qdf;
 	private double qvv1;
 	private double qvv2;
-	private double qvv;
 
 	private static DistributedLoadCalculator distributedLoadCalculator = null;
 

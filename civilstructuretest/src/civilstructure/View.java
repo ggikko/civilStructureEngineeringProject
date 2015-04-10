@@ -16,13 +16,13 @@ public class View {
 		//	client2.setPx(5);
 		
 		client.setQ(10);
-		client.setQx1(3);
-		client.setQx2(4);
+		client.setQx1(2);
+		client.setQx2(6);
 		
 		client.setM(10);
 		client.setMx(6);
 		
-		client.setX(3);  // x Value
+		client.setX(9);  // x Value
 		
 		client.setElasticity(200);
 		client.setInertia(20*20*20*20/12);

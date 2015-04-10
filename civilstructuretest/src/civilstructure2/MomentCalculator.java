@@ -25,21 +25,22 @@ public class MomentCalculator {
 		return momentCalculator;
 	}
 
-	public void momentSolve(double l, double m, double mx, double x, double e, double i) {
-		this.mva = m / l; // calculate Va
-		if (x >= 0 && x < mx) {
-			this.mv = -mva;
-			this.mm = -mva * x;
-		} else {
-			this.mm = -mva * x - m;
-		}
+	public void momentSolve(double l, double m, double mx, double x, double e,
+			double i) {
 		if (x >= 0 && x <= mx) {
-			this.mdf = (-m*x)/(6*l*e*i)*(6*mx*l-3*mx*mx-2*l*l-x*x);
-			this.mvv = (-m)/(6*l*e*i)*(6*mx*l - 3*mx*mx - 2*l*l - 3 *x*x);
+			this.mv = 0;
+			this.mm = m;
+			this.mdf = (-m * x * x) / (2 * e * i);
+			this.mvv = (-m * x) / (e * i);
+
 		} else {
-			this.mdf = (-m*(l-x))/(6*l*e*i)*(6*(l-mx)*l-3*(l-mx)*(l-mx)-2*l*l-(l-x)*(l-x));
-			this.mvv = (-m)/(6*l*e*i)*(6*(l-mx)*l-3*(l-mx)*(l-mx)-2*l*l-3*(l-x)*(l-x));
+			this.mv = 0;
+			this.mm = 0;
+			this.mdf = (-m * x * x) / (2 * e * i);
+			this.mvv = (-m * x) / (e * i);
+
 		}
+
 		printer();
 	};
 

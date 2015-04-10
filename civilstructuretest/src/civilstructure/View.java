@@ -33,7 +33,7 @@ public class View {
 		
 	//	client.singleLoadSolve();
 	//	client.momentSolve();
-		client.distributedLoadSolve();
+	//  client.distributedLoadSolve();
 	//	client2.singleLoadSolve();
 		
 		

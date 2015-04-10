@@ -13,8 +13,8 @@ public class SingleLoadCalculator {
 	public void printer() {
 		System.out.println(pv);
 		System.out.println(pm);
-		System.err.println(pdf);
-		System.out.println(pvv);
+		System.err.println((pdf)*1000000000);
+		System.out.println((pvv)*1000000);
 	}
 
 	// singleton
@@ -27,6 +27,7 @@ public class SingleLoadCalculator {
 
 	public void singleLoadsolve(double l, double p, double px, double x,
 			double e, double i) {
+		
 		this.pva = p * (l - px) / l; // calculate Va
 		if (x >= 0 && x <= px) { // if 0<x<x1
 			this.pv = -pva;
